@@ -4,6 +4,8 @@ import logger from 'debug-dude';
 import Express from 'express';
 import { Server } from 'http';
 
+import middleware from './middleware.js';
+
 const { info, log, warn, error } = logger('server');
 
 debug.enable('server:info');
@@ -14,7 +16,10 @@ debug.enable('server:error');
 const app = new Express();
 const server = new Server(app);
 
+middleware.forEach((m) => app.use(m));  // setup middleware
+
 app.use((req, res) => {
+  throw new Error('some pizdec has occured');
   res.status(200).send('hello');
 });
 

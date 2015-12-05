@@ -1,0 +1,27 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "Vasiliy Yorkin <vasiliy.yorkin@gmail.com> (https://github.com/vyorkin)",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "1.6.0",
+    "debug": "2.2.0",
+    "debug-dude": "1.0.3",
+    "errorhandler": "1.4.2",
+    "express": "4.13.3",
+    "helmet": "0.15.0",
+    "morgan": "1.6.1",
+    "response-time": "2.3.1",
+    "serve-favicon": "2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.3.13",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "6.3.13"
+  }
+}
